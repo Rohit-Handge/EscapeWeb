@@ -9,7 +9,7 @@ import { existsSync } from 'node:fs';
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: { origin: ['http://localhost:5173'] }
+  cors: { origin: ['https://escapeweb.onrender.com/'] }
 });
 
 const PORT = process.env.PORT || 3000;

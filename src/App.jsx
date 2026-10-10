@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import './index.css';
 import { useGameAudio } from './useGameAudio';
 
-const socket = io('http://localhost:3000', { autoConnect: false });
+const socket = io('https://escapeweb.onrender.com/', { autoConnect: false });
 
 export default function App() {
   const [name, setName] = useState('');
